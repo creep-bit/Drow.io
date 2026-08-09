@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="37djPDGdIwRyYFVb_JRl">
-    <mxGraphModel dx="1448" dy="548" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2339" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="989" dy="375" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2339" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -583,7 +583,7 @@
         <mxCell id="_hrWZGNeymvtdVtOxGqp-6" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" value="IEEE 754 标准默认规定，缺省的舍入技术应该向最近的值舍入。如果一个数与两个最近的可表示的值的距离相等，则选择最低位为 0 的作为舍入值" vertex="1">
           <mxGeometry height="40" width="440" x="1520" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="_hrWZGNeymvtdVtOxGqp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="舍入到最近的值；若处于正中间（平局），则向远离 0 的方向进位" vertex="1">
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="舍入到最近的值；若处于正中间（平局），则可以选择向远离 0 的方向进位或者向无穷进位" vertex="1">
           <mxGeometry height="40" width="370" x="1520" y="800" as="geometry" />
         </mxCell>
         <mxCell id="_hrWZGNeymvtdVtOxGqp-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;rounded=0;" value="向零舍入" vertex="1">
@@ -603,6 +603,39 @@
         </mxCell>
         <mxCell id="_hrWZGNeymvtdVtOxGqp-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;" value="取不大于真实值的最大可表示数" vertex="1">
           <mxGeometry height="40" width="200" x="1360" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="F" vertex="1">
+          <mxGeometry height="40" width="200" x="1280" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="G" vertex="1">
+          <mxGeometry height="40" width="40" x="1480" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="R" vertex="1">
+          <mxGeometry height="40" width="40" x="1520" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="S" vertex="1">
+          <mxGeometry height="40" width="40" x="1560" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="粘位" vertex="1">
+          <mxGeometry height="40" width="40" x="1560" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="舍入位" vertex="1">
+          <mxGeometry height="40" width="40" x="1520" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="尾数" vertex="1">
+          <mxGeometry height="40" width="40" x="1360" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="保护位" vertex="1">
+          <mxGeometry height="40" width="40" x="1480" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="保护位：用于暂时提高浮点数的精度" vertex="1">
+          <mxGeometry height="40" width="320" x="1280" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="舍入位：用于辅助完成舍入" vertex="1">
+          <mxGeometry height="40" width="320" x="1280" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="ZtpCp9i8aABkZLBrAhLl-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="粘位：&lt;span class=&quot;math-inline&quot; data-math=&quot;R&quot; data-index-in-node=&quot;145&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important;&quot;&gt;R&lt;/span&gt;位右侧的所有位进行逻辑与运算后的结果，表明右边有一个或多个位为 1" vertex="1">
+          <mxGeometry height="40" width="440" x="1280" y="1360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
