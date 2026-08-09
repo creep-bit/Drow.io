@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="37djPDGdIwRyYFVb_JRl">
-    <mxGraphModel dx="3683" dy="1310" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2339" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1448" dy="548" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2339" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -449,6 +449,9 @@
         </mxCell>
         <mxCell id="-SKJp9Za45CinuXW4yb6-109" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="759.71" y="1524.24" />
+            </Array>
             <mxPoint x="759.71" y="1550" as="sourcePoint" />
             <mxPoint x="759.71" y="1500" as="targetPoint" />
           </mxGeometry>
@@ -557,6 +560,49 @@
         </mxCell>
         <mxCell id="-SKJp9Za45CinuXW4yb6-252" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;" value="&lt;div class=&quot;math-block&quot; data-math=&quot;N_{\text{min}} = + (1.0)_2 \times 2^{1 - 127} = 2^{-126} \approx \mathbf{1.1754944 \times 10^{-38}}&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important;&quot;&gt;$$+ 1.00\dots01_2 \times 2^{ -126} $$&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="160" x="680" y="1365" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-2" edge="1" parent="1" source="_hrWZGNeymvtdVtOxGqp-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_hrWZGNeymvtdVtOxGqp-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-3" edge="1" parent="1" source="_hrWZGNeymvtdVtOxGqp-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="_hrWZGNeymvtdVtOxGqp-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="就近舍入" vertex="1">
+          <mxGeometry height="40" width="80" x="1280" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="向偶数舍入" vertex="1">
+          <mxGeometry height="40" width="80" x="1440" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="四舍五入" vertex="1">
+          <mxGeometry height="40" width="80" x="1440" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-6" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" value="IEEE 754 标准默认规定，缺省的舍入技术应该向最近的值舍入。如果一个数与两个最近的可表示的值的距离相等，则选择最低位为 0 的作为舍入值" vertex="1">
+          <mxGeometry height="40" width="440" x="1520" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="舍入到最近的值；若处于正中间（平局），则向远离 0 的方向进位" vertex="1">
+          <mxGeometry height="40" width="370" x="1520" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;rounded=0;" value="向零舍入" vertex="1">
+          <mxGeometry height="40" width="80" x="1280" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;rounded=0;" value="直接扔掉多余的低位，结果朝数轴上 0 的方向靠拢。" vertex="1">
+          <mxGeometry height="40" width="310" x="1360" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;math-inline&quot; data-math=&quot;+\infty&quot; data-index-in-node=&quot;2&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important;&quot;&gt;向正无穷舍入&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="1280" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;" value="&lt;span class=&quot;math-inline&quot; data-math=&quot;+\infty&quot; data-index-in-node=&quot;2&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important;&quot;&gt;向负无穷舍入&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="1280" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;rounded=0;" value="取不小于真实值的最小可表示数" vertex="1">
+          <mxGeometry height="40" width="200" x="1360" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="_hrWZGNeymvtdVtOxGqp-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;" value="取不大于真实值的最大可表示数" vertex="1">
+          <mxGeometry height="40" width="200" x="1360" y="1040" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
